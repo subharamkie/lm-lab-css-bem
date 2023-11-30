@@ -1,35 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <title>BEM Notation & OOCSS: Writing scaleable CSS</title>
-</head>
+  </head>
 
-<body>
-    <h1>BEM Wars</h1>
+  <body class="page">
+    <h1 class="text">BEM Wars</h1>
     <div class="container">
-        <div>
+      <div class="card">
+            <div class="card__dark">
             <h2>The Dark Side</h2>
-            <img src="./images/vader.jpeg">
-            <p>Nesting!</p>
-            <p>Conflict!</p>
-            <p>Specificity Wars!</p>
-            <p>Cookies</p>
+            <img class="card__img" src="./images/vader.jpeg" />
+            <p class="card__text text">Nesting!</p>
+            <p class="card__text text">Conflict!</p>
+            <p class="card__text text">Specificity Wars!</p>
+            <p class="card__text text">Cookies</p>
+            <button class="btn btnDanger">Danger!</button>
+    
+            </div>
         </div>
-
-        <div>
+        <div class="card">
+            <div class="card__danger">
+            <h2>The Dark Side</h2>
+            <img class="card__img" src="./images/darkside.jpeg" />
+            <p class="card__text text">Nesting!</p>
+            <p class="card__text text">Conflict!</p>
+            <p class="card__text text">Specificity Wars!</p>
+            <p class="card__text text">Cookies</p>
+            <button class="btn btnDanger">Danger!</button>
+    
+            </div>
+        </div>
+      
+        <div class="card">
+            <div class="card__light">
             <h2>The Force</h2>
-            <img src="./images/yoda.jpeg">
-            <p>Love</p>
-            <p>Beauty</p>
-            <p>CSS that Scales!</p>
-            <p>Great warrior. Wars not make one great!</p>
+            <img class="card__img" src="./images/yoda.jpeg" />
+            <p class="card__text">Love</p>
+            <p class="card__text">Beauty</p>
+            <p class="card__text">CSS that Scales!</p>
+            <p class="card__text">Great warrior. Wars not make one great!</p>
+            <button class="btn btnSafe">Safe!</button>
+    
         </div>
+        </div>
+        <div class="card">
+            <div class="card__force">
+            <h2>The Force</h2>
+            <img class="card__img" src="./images/The_Rise_of_a_Hero.png" />
+            <p class="card__text">Love</p>
+            <p class="card__text">Great warrior. Wars not make one great!</p>
+            <button class="btn btnSafe">Safe!</button>
+    
+        </div>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

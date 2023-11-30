@@ -1,7 +1,69 @@
-/* You can delete / re-write this img class  */
-
-img {
+.page{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-image: url(./images/starwars.jpg);
+    background-size: cover;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+/* defines the card structure */
+.card{
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 15px;
+    display: flex;
+    font-size: 24px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 30px 0;
+    width: 200px;
+}
+.card__dark{
+    --darbg:cadetblue;
+    background-color: var(--darbg);
+}
+.card__danger{
+    --darkbg:darkcyan;
+    background-color:var(--darkbg);
+}
+.card__light{
+    --lightbg: beige;
+    background-color:var(--lightbg);
+}
+.card__force{
+    --forcebg:cornsilk;
+    background-color:var(--forcebg);
+}
+.card__img {
     max-width: 200px;
 }
-
-/* Happy coding! */
+/* change font colour */
+.text{
+    --whiteText:white;
+    color:var(--whiteText);
+}
+.card__text{
+    font-size: 20px;
+    font-style: italic;
+}
+.btn {
+    border: 5px solid ridge;
+    border-radius: 15px;
+    color: var(--whiteText);
+    height: 50px;
+    min-width: 100px;
+    padding: 10px;
+    font-size: 24px;
+}
+.btnDanger{
+    --danger:red;
+    background-color: var(--danger);   
+}
+.btnSafe{
+    --safe:green;
+    background-color: var(--safe);   
+}
