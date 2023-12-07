@@ -22,19 +22,19 @@
     padding: 2.5% 0;
     width: 25%;
 }
-.card__dark{
+.card--dark{
     --darbg:cadetblue;
     background-color: var(--darbg);
 }
-.card__danger{
+.card--danger{
     --darkbg:darkcyan;
     background-color:var(--darkbg);
 }
-.card__light{
+.card--light{
     --lightbg: beige;
     background-color:var(--lightbg);
 }
-.card__force{
+.card--force{
     --forcebg:cornsilk;
     background-color:var(--forcebg);
 }
@@ -59,11 +59,11 @@
     padding: 2.5%;
     font-size: 1.2rem;
 }
-.btnDanger{
+.btn--Danger{
     --danger:red;
     background-color: var(--danger);   
 }
-.btnSafe{
+.btn--Safe{
     --safe:green;
     background-color: var(--safe);   
 }
